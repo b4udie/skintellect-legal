@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Skintellect</title>
+<style>
+  :root{
+    --bg:#f7f5f1; --surface:#ffffff; --text:#1f2a24; --text2:#4a564e; --text3:#7c877f;
+    --line:#e6e2da; --accent:#5a7858; --accent2:#a9793f; --link:#42663f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141816; --surface:#1c211e; --text:#e9ede9; --text2:#b3bcb5; --text3:#828d84;
+      --line:#2b322d; --accent:#8fb08c; --accent2:#c79a5f; --link:#8fb08c;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px}
+  .eyebrow{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.18em; text-transform:uppercase; color:var(--accent2); margin:0 0 10px}
+  h1{font-size:30px; line-height:1.15; letter-spacing:-.02em; margin:0 0 6px; font-weight:700}
+  .updated{color:var(--text3); font-size:14px; margin:0 0 28px}
+  h2{font-size:19px; line-height:1.3; margin:34px 0 10px; font-weight:700; letter-spacing:-.01em}
+  h3{font-size:15px; margin:20px 0 6px; font-weight:600}
+  p,li{color:var(--text2)}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px; padding-left:22px}
+  li{margin:0 0 7px}
+  strong{color:var(--text)}
+  a{color:var(--link); text-decoration:underline; text-underline-offset:2px}
+  .lead{color:var(--text); font-size:17px}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; margin:0 0 12px}
+  .card.good{border-left:3px solid var(--accent)}
+  hr{border:0; border-top:1px solid var(--line); margin:36px 0}
+  .foot{color:var(--text3); font-size:13px; margin-top:40px}
+  code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:1px 5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Skintellect</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective date: 7 July 2026 · Last updated: 7 July 2026</p>
+
+  <p class="lead">Skintellect is a skincare-ingredient scanner. This policy explains what data the app processes, what stays on your device, what is sent to our servers, and the choices you have. We built the app to keep as much as possible on your device.</p>
+
+  <div class="card good">
+    <strong>The short version.</strong>
+    <ul>
+      <li>Your <strong>photos never leave your device</strong>. The app reads the ingredient text on-device and only sends that <em>text</em> for analysis.</li>
+      <li>There is <strong>no account</strong>. We don't ask for your name, email, or phone number.</li>
+      <li>We use privacy-respecting <strong>usage analytics</strong> and process purchases through the App Store.</li>
+      <li>We <strong>do not sell</strong> your data or use it for advertising.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>Skintellect ("the app", "we", "us") is developed by Valentyn Bratkevych, an independent developer. For any privacy question or request, contact us at <a href="mailto:bratkevychv@proton.me">bratkevychv@proton.me</a>. We are the controller of the limited data described below.</p>
+
+  <h2>2. Data that stays on your device</h2>
+  <p>The following is created and stored <strong>only on your device</strong> and is never uploaded to us:</p>
+  <ul>
+    <li><strong>Photos you capture</strong> of product labels. They are used to read the ingredient list on-device and are stored locally (as a small thumbnail) so your scan history can show them.</li>
+    <li><strong>On-device text recognition (OCR).</strong> Reading the label happens locally using Apple's Vision framework. The photo itself is not transmitted.</li>
+    <li><strong>Your scan and comparison history</strong>, kept in the app's local database.</li>
+    <li><strong>Your free-scan counter</strong>, stored in the device Keychain.</li>
+    <li><strong>Your theme preference.</strong></li>
+  </ul>
+  <p>Because this data lives on your device, deleting the app removes it (the free-scan counter in the Keychain is the intentional exception, so the free allowance is not reset by reinstalling).</p>
+
+  <h2>3. Data sent to our servers</h2>
+  <p>To analyze a product, the app sends our backend only:</p>
+  <ul>
+    <li>the <strong>recognized ingredient text</strong> (the words read from the label — <em>not the photo</em>);</li>
+    <li>the parsed <strong>list of ingredients</strong>;</li>
+    <li>your <strong>app locale</strong> (e.g. <code>en</code>, <code>fr</code>) so results are returned in your language;</li>
+    <li>the <strong>app version</strong>, for diagnostics and compatibility.</li>
+  </ul>
+  <p>These requests are cryptographically signed and sent over an encrypted (HTTPS) connection. They do <strong>not</strong> include your name, email, device identifiers, or the photo. Our servers are hosted in the European Union.</p>
+
+  <h3>Service providers used for analysis</h3>
+  <p>To produce the ingredient assessment, our backend passes the ingredient text to trusted processors:</p>
+  <ul>
+    <li><strong>Anthropic (Claude)</strong> and <strong>OpenAI</strong> — to interpret and summarize ingredient information. Per their API terms, this input is used to serve the request and is not used to train their models.</li>
+    <li><strong>PubMed</strong> (U.S. National Library of Medicine) — to look up public scientific references shown as sources.</li>
+  </ul>
+  <p>Only the ingredient text is shared with these providers — nothing that identifies you.</p>
+
+  <h2>4. Usage analytics</h2>
+  <p>We use <strong>Amplitude</strong> to understand how the app is used (for example, which screens are opened and whether a scan completes) so we can improve it. This includes:</p>
+  <ul>
+    <li>anonymous <strong>usage events</strong> and their properties;</li>
+    <li>a randomly generated <strong>device/installation identifier</strong> and standard technical metadata (app version, device model, OS version) provided by the analytics SDK.</li>
+  </ul>
+  <p>Analytics does <strong>not</strong> contain your name or email (we don't have them), and we do not use it for advertising or cross-app tracking. Data is processed by Amplitude, Inc. as our processor.</p>
+
+  <h2>5. Subscriptions and purchases</h2>
+  <p>Skintellect offers optional paid subscriptions. Purchases are handled by <strong>Apple</strong> through the App Store — we never see or store your payment details. We use <strong>RevenueCat</strong> to manage entitlement (whether a subscription is active). RevenueCat receives an anonymous app-user identifier and the App Store transaction/receipt needed to validate the subscription. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+
+  <h2>6. No account, no profiling</h2>
+  <p>The app has no sign-up or login. We do not build advertising profiles, we do not sell or rent personal data, and we do not track you across other companies' apps or websites.</p>
+
+  <h2>7. Data retention</h2>
+  <p>On-device data stays until you delete it or uninstall the app. Ingredient-analysis requests are processed to return your result and may be retained briefly in server logs for security and reliability, then discarded. Analytics data is retained by Amplitude according to our configured retention settings.</p>
+
+  <h2>8. Children</h2>
+  <p>Skintellect is not directed to children and is intended for users aged 16 and over. We do not knowingly collect data from children. If you believe a child has used the app, contact us and we will help.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live (for example under the EU/UK GDPR or the California CCPA), you may have the right to access, correct, delete, or restrict processing of your personal data, and to object to it. Because most data is on your device, you can exercise many of these rights directly by deleting the app. For anything held by us or our processors, email <a href="mailto:bratkevychv@proton.me">bratkevychv@proton.me</a> and we will respond.</p>
+
+  <h2>10. International transfers</h2>
+  <p>Our servers are in the EU. Our processors (Anthropic, OpenAI, Amplitude, RevenueCat, Apple) may process data in the United States or other countries under appropriate safeguards such as the EU Standard Contractual Clauses.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. Material changes will be reflected here with a new "Last updated" date. Continued use of the app after an update means you accept the revised policy.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions or requests: <a href="mailto:bratkevychv@proton.me">bratkevychv@proton.me</a>.</p>
+
+  <hr>
+  <p class="foot">Skintellect · <a href="../terms/">Terms of Use</a> · © 2026 Valentyn Bratkevych</p>
+</div>
+</body>
+</html>

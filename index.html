@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Skintellect — Legal</title>
+<style>
+  :root{
+    --bg:#f7f5f1; --surface:#ffffff; --text:#1f2a24; --text2:#4a564e; --text3:#7c877f;
+    --line:#e6e2da; --accent:#5a7858; --accent2:#a9793f; --link:#42663f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141816; --surface:#1c211e; --text:#e9ede9; --text2:#b3bcb5; --text3:#828d84;
+      --line:#2b322d; --accent:#8fb08c; --accent2:#c79a5f; --link:#8fb08c;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:env(safe-area-inset-top) 22px env(safe-area-inset-bottom);}
+  .wrap{max-width:520px; width:100%; text-align:center}
+  .eyebrow{font:600 11px/1 ui-monospace,Menlo,monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--accent2); margin:0 0 12px}
+  h1{font-size:34px; letter-spacing:-.02em; margin:0 0 8px}
+  p.sub{color:var(--text2); margin:0 0 30px}
+  a.doc{display:flex; align-items:center; justify-content:space-between; gap:12px;
+    text-decoration:none; text-align:left; background:var(--surface); border:1px solid var(--line);
+    border-radius:16px; padding:18px 20px; margin:0 0 12px; color:var(--text)}
+  a.doc .t{font-weight:600}
+  a.doc .d{color:var(--text3); font-size:13.5px; margin-top:2px}
+  a.doc .arrow{color:var(--accent); font-size:20px}
+  .foot{color:var(--text3); font-size:13px; margin-top:26px}
+  .foot a{color:var(--link)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Skintellect</p>
+  <h1>Legal</h1>
+  <p class="sub">Policies for the Skintellect skincare-ingredient scanner.</p>
+
+  <a class="doc" href="privacy/">
+    <span><span class="t">Privacy Policy</span><br><span class="d">What data we process and what stays on your device</span></span>
+    <span class="arrow">→</span>
+  </a>
+  <a class="doc" href="terms/">
+    <span><span class="t">Terms of Use</span><br><span class="d">The rules for using the app and subscriptions</span></span>
+    <span class="arrow">→</span>
+  </a>
+
+  <p class="foot">Contact: <a href="mailto:bratkevychv@proton.me">bratkevychv@proton.me</a> · © 2026 Valentyn Bratkevych</p>
+</div>
+</body>
+</html>
