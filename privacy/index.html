@@ -88,23 +88,18 @@
   <p>These requests are cryptographically signed and sent over an encrypted (HTTPS) connection. They do <strong>not</strong> include your name, email, device identifiers, or the photo. Our servers are hosted in the European Union.</p>
 
   <h3>Service providers used for analysis</h3>
-  <p>To produce the ingredient assessment, our backend passes the ingredient text to trusted processors:</p>
-  <ul>
-    <li><strong>Anthropic (Claude)</strong> and <strong>OpenAI</strong> — to interpret and summarize ingredient information. Per their API terms, this input is used to serve the request and is not used to train their models.</li>
-    <li><strong>PubMed</strong> (U.S. National Library of Medicine) — to look up public scientific references shown as sources.</li>
-  </ul>
-  <p>Only the ingredient text is shared with these providers — nothing that identifies you.</p>
+  <p>To produce the ingredient assessment, our backend uses trusted third-party processing services (including AI providers) to interpret and summarize the ingredient information, and looks up public scientific literature for the references shown as sources. These providers process the ingredient text only to return your result; it is not used to train their models. Only the ingredient text is shared — nothing that identifies you.</p>
 
   <h2>4. Usage analytics</h2>
-  <p>We use <strong>Amplitude</strong> to understand how the app is used (for example, which screens are opened and whether a scan completes) so we can improve it. This includes:</p>
+  <p>We use a third-party analytics service to understand how the app is used (for example, which screens are opened and whether a scan completes) so we can improve it. This includes:</p>
   <ul>
     <li>anonymous <strong>usage events</strong> and their properties;</li>
     <li>a randomly generated <strong>device/installation identifier</strong> and standard technical metadata (app version, device model, OS version) provided by the analytics SDK.</li>
   </ul>
-  <p>Analytics does <strong>not</strong> contain your name or email (we don't have them), and we do not use it for advertising or cross-app tracking. Data is processed by Amplitude, Inc. as our processor.</p>
+  <p>Analytics does <strong>not</strong> contain your name or email (we don't have them), and we do not use it for advertising or cross-app tracking. The data is processed by our analytics provider on our behalf.</p>
 
   <h2>5. Subscriptions and purchases</h2>
-  <p>Skintellect offers optional paid subscriptions. Purchases are handled by <strong>Apple</strong> through the App Store — we never see or store your payment details. We use <strong>RevenueCat</strong> to manage entitlement (whether a subscription is active). RevenueCat receives an anonymous app-user identifier and the App Store transaction/receipt needed to validate the subscription. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+  <p>Skintellect offers optional paid subscriptions. Purchases are handled by <strong>Apple</strong> through the App Store — we never see or store your payment details. We use a third-party subscription-management service to check whether a subscription is active; it receives an anonymous app-user identifier and the App Store transaction needed to validate the subscription — nothing that identifies you. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
 
   <h2>6. No account, no profiling</h2>
   <p>The app has no sign-up or login. We do not build advertising profiles, we do not sell or rent personal data, and we do not track you across other companies' apps or websites.</p>
@@ -119,7 +114,7 @@
   <p>Depending on where you live (for example under the EU/UK GDPR or the California CCPA), you may have the right to access, correct, delete, or restrict processing of your personal data, and to object to it. Because most data is on your device, you can exercise many of these rights directly by deleting the app. For anything held by us or our processors, email <a href="mailto:bratkevychv@proton.me">bratkevychv@proton.me</a> and we will respond.</p>
 
   <h2>10. International transfers</h2>
-  <p>Our servers are in the EU. Our processors (Anthropic, OpenAI, Amplitude, RevenueCat, Apple) may process data in the United States or other countries under appropriate safeguards such as the EU Standard Contractual Clauses.</p>
+  <p>Our servers are in the EU. Some of our service providers may process data in the United States or other countries under appropriate safeguards such as the EU Standard Contractual Clauses.</p>
 
   <h2>11. Changes to this policy</h2>
   <p>We may update this policy as the app evolves. Material changes will be reflected here with a new "Last updated" date. Continued use of the app after an update means you accept the revised policy.</p>
